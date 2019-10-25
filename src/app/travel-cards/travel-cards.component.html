@@ -1,0 +1,34 @@
+<ng-container *ngFor="let travel of travelArray">
+	<div class="card" style="width: 18rem;">
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-header">
+	  		{{travel.destination}}
+	  	</div>
+		<div class="card-body">
+			<p class="card-text">{{travel.description}}
+			{{travel.price}}</p>
+		</div>
+		<div class="card-footer">
+			{{travel.type}}
+		</div>
+	</div>
+</ng-container>
+
+
+
+
+<!--  <ng-container *ngFor="let travel of travelArray">
+       <tr class="table-dark">
+           <td>{{travel.destination}}</td>
+           <td>{{travel.type}}</td>
+           <td>{{travel.description}}</td>
+           <td>{{travel.price}}</td>
+           <td><a href="{{travel.image}}">Link</a></td>
+
+           <td>
+               <button class="btn btn-info" (click)="travelService.populateForm(travel)">Edit</button>
+               <button class="btn btn-danger" (click)="onDelete(travel.$key)">Delete</button>
+           </td>
+       </tr>
+   </ng-container> -->
+
