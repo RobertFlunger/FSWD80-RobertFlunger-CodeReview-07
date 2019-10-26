@@ -32,7 +32,7 @@ export class TravelService {
 			destination: travel.destination,
 			price: travel.price,
 			type: travel.type,
-			description: travel.type,
+			description: travel.description,
 			image: travel.image
 		})
 	}
@@ -46,7 +46,7 @@ export class TravelService {
 			destination: travel.destination,
 			price: travel.price,
 			type: travel.type,
-			description: travel.type,
+			description: travel.description,
 			image: travel.image
 		});
 	}

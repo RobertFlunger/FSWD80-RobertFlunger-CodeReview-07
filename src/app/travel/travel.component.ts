@@ -8,7 +8,7 @@ import { TravelService } from '../shared/travel.service';
   styleUrls: ['./travel.component.css']
 })
 export class TravelComponent implements OnInit {
-
+  visible: boolean = true;
 	submitted: boolean;
 	showSuccessMessage: boolean;
 	formControls = this.travelService.form.controls;
@@ -35,5 +35,9 @@ export class TravelComponent implements OnInit {
   			} 
 
   			}
+
+     toggleDisplay() {
+       this.visible = !this.visible;
+     }        
   		}
 

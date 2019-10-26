@@ -6,6 +6,7 @@ import { TravelService } from '../shared/travel.service';
   templateUrl: './travel-cards.component.html',
   styleUrls: ['./travel-cards.component.css']
 })
+
 export class TravelCardsComponent implements OnInit {
 	travelArray = [];
 	
@@ -20,7 +21,14 @@ export class TravelCardsComponent implements OnInit {
   					...item.payload.val()
   				}
   			});
-  		});
+  		}); 
+   
   }
 
-}
+
+  }
+
+   
+
+  
+

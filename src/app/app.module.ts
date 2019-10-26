@@ -18,6 +18,7 @@ import { environment } from "../environments/environment";
 
 import { TravelService } from './shared/travel.service';
 import { TravelCardsComponent } from './travel-cards/travel-cards.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 
 
@@ -31,7 +32,8 @@ import { TravelCardsComponent } from './travel-cards/travel-cards.component';
     TravelComponent,
     FooterComponent,
     TravelListComponent,
-    TravelCardsComponent
+    TravelCardsComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
